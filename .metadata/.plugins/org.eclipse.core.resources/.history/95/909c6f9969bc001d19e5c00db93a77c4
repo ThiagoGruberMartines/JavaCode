@@ -57,7 +57,6 @@ public class Calculadora {
 				num2 = scan.nextDouble();
 				Double imc = Calculos.imc(altura, peso);
 				System.out.println("Seu IMC e: " + imc);
-			break;
 			default: 
 				System.out.println("O operador " + operador + " e invalido");
 }
