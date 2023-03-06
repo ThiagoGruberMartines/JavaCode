@@ -1,0 +1,60 @@
+package calculadora;
+
+import java.util.Scanner;
+
+public class Calculadora {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		Double num1, num2, altura, peso;
+		int operador;
+		
+		
+		System.out.println("Escolha uma operacao: ");
+		System.out.println(1 + "1: Soma");
+		System.out.println(2 + "2: Subtracao");
+		System.out.println(3 + "3: Divisao");
+		System.out.println(4 + "4: Multiplicacao");
+		System.out.println(5 + "5: IMC");
+		operador = scan.nextInt();
+		
+		switch(operador) {
+		case 1: 
+			System.out.println("Digite o primeiro número");
+			num1 = scan.nextDouble();
+			System.out.println("Digite o segundo número");
+			Double soma = Calculos.soma(num1, num2);
+			System.out.println("O resultado da soma e: " + soma);
+		break;
+		case 2: 
+			Double subtracao = Calculos.subtracao(num1, num2);
+			System.out.println("O resultado da subtracao e: " + subtracao);
+		break;
+		case 3: 
+			Double divisao = Calculos.divisao(num1, num2);
+			System.out.println("O resultado da divisao e: " + divisao);
+		break;
+		case 4: 
+			Double multiplicacao = Calculos.multiplicacao(num1, num2);
+			System.out.println("O resultado da multiplicacao e: " + multiplicacao);
+		break;
+		case 5:
+			Double imc = Calculos.imc(altura, peso);
+			System.out.println("O IMC e: " + imc);
+		default: 
+			System.out.println("O operador " + operador + " e invalido");
+	}
+		
+		
+		
+		System.out.println("Digite um numero:");
+		num1 = scan.nextDouble();
+		System.out.println("Qual operacao gostaria de fazer? (+, -, /, *, imc, )");
+		operador = scan.nextInt();
+		System.out.println("Digite um segundo numero:");
+		num2 = scan.nextDouble();
+		
+		
+
+		
+}
+}
