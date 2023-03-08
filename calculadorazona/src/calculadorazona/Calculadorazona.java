@@ -1,8 +1,8 @@
-package calculadora;
+package calculadorazona;
 
 import java.util.Scanner;
 
-public class Calculadora {
+public class Calculadorazona {
 	public static void main(String[] args) {
 		try (Scanner scan = new Scanner(System.in)) {
 			Double num1 = 0.0, num2 = 0.0, altura = 0.0, peso = 0.0;
@@ -25,6 +25,7 @@ public class Calculadora {
 				Double soma = Calculos.soma(num1, num2);
 				System.out.println("O resultado da soma e: " + soma);
 			break;
+			
 			case 2:
 				System.out.println("Digite o primeiro numero:");
 				num1 = scan.nextDouble();
@@ -51,9 +52,9 @@ public class Calculadora {
 			break;
 			case 5:
 				System.out.println("Digite sua altura:");
-				num1 = scan.nextDouble();
+				altura = scan.nextDouble();
 				System.out.println("Digite seu peso:");
-				num2 = scan.nextDouble();
+				peso = scan.nextDouble();
 				Double imc = Calculos.imc(altura, peso);
 				System.out.println("Seu IMC e: " + imc);
 			break;
