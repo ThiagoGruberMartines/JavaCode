@@ -10,6 +10,7 @@ public class Calculadorazona {
 			
 			
 			System.out.println("Escolha uma operacao: ");
+			System.out.println(1 + " Soma");
 			System.out.println(2 + " Subtracao");
 			System.out.println(3 + " Divisao");
 			System.out.println(4 + " Multiplicacao");
