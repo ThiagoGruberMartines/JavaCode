@@ -24,8 +24,4 @@ public class Metodos {
 	public double calculaDivisao(Double num1, Double num2) {
 		return num1 / num2;
 	}
-	
-	public double calculaIMC(Double altura, Double peso) {
-		return 
-	}
 }
